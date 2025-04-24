@@ -4,15 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vedant Birla - Personal Website</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./formatting/style.css">
 </head>
 <body>
     <div id="header"></div>
     <main>
-        <h1><strong>Hobbies</strong></h1>
-
+        <h1><strong>My Hobbies</strong></h1>
+        <section class="hobbies">
+            <div class="hobby-grid">
+                <div class="hobby-tile" data-info="I’ve been coding since high school. My favorite tools are React, Next.js, and Python." data-img="./icons/code-icon.svg">
+                    <img src="./icons/code-icon.svg" alt="Coding">
+                    <h3>Coding</h3>
+                    <p>I love building web apps and experimenting with new languages and frameworks.</p>
+                </div>
+                <div class="hobby-tile" data-info="I’ve been coding since high school. My favorite tools are React, Next.js, and Python." data-img="./icons/code-icon.svg">
+                    <img src="./icons/hiking-icon.png" alt="Hiking">
+                    <h3>Hiking</h3>
+                    <p>Exploring nature trails helps me reset and find inspiration for my projects.</p>
+                </div>
+                <div class="hobby-tile" data-info="I've been playing guitar on and off for years, and have been classically trained in vocals." data-img="./images/guitar.jpeg">
+                    <img src="./icons/guitar-icon.png" alt="Music">
+                    <h3>Music</h3>
+                    <p>I enjoy playing guitar and exploring new genres of music in my free time.</p>
+                </div>
+                <div class="hobby-tile" data-info="I’ve been coding since high school. My favorite tools are React, Next.js, and Python." data-img="./icons/code-icon.svg">
+                    <img src="./icons/reading-icon.png" alt="Reading">
+                    <h3>Reading</h3>
+                    <p>Always diving into a new book, whether academic or fanstasy!</p>
+                </div>
+            </div>
+        </section>
     </main>
     <div id="footer"></div>
-    <script src="./script.js"></script>
+    <script src="./formatting/script.js"></script>
+    <div id="popup-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <img id="modal-image" src="" alt="Hobby image" class="modal-img">
+            <p id="modal-text"></p>
+        </div>
+    </div>
 </body>
 </html>
