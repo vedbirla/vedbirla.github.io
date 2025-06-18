@@ -1,0 +1,13 @@
+june 17 2025
+worked on index, hobbies, and background
+next time:
+index needs to fix the timeline bubbles location
+hobbies need to finish the last 3(?) tiles
+background needs to finish self study section, and add awards and skills
+other:
+need to get images for experience page
+need to make expirience pages
+need to make tutoring page
+need to add connection from contact page to tutorign page
+consider making the tutoring page seperate so no header and footer, different design, different style page, but link to my website.
+

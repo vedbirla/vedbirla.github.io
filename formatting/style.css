@@ -55,6 +55,55 @@ nav a:hover {
     transform: scale(1.1);
 }
 
+/* Hamburger toggle button */
+.menu-toggle {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 28px;
+    cursor: pointer;
+    display: none; /* hidden by default */
+}
+
+/* Navigation default (desktop) */
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    header {
+        position: relative;
+    }
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #1e1e2f;
+        padding: 10px 0;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 999;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links a {
+        padding: 10px 20px;
+        text-align: center;
+        font-size: 18px;
+    }
+}
+
+
 /* header styling end */
 
 /* Footer styling */
@@ -488,7 +537,7 @@ footer {
 
 /* hobby page formatting end */
 
-/* Education Page Styling */
+/* BACKGROUND Page Styling */
 
 .schools {
     background-color: #ffffff;
@@ -527,6 +576,12 @@ footer {
 
 .school-card h3 {
     font-size: 24px;
+    margin-bottom: 10px;
+    color: #1e1e2f;
+}
+
+.school-card h4 {
+    font-size: 17px;
     margin-bottom: 10px;
     color: #1e1e2f;
 }
@@ -670,7 +725,7 @@ footer {
     color: #333;
 }
 
-/* education page end */
+/* background page end */
 
 /* contact me page */
 
@@ -718,6 +773,8 @@ footer {
 .contact-socials {
     text-align: center;
     padding: 30px 20px;
+    background-color: #f9f9f9;
+    margin-top: 20px;
 }
 
 .contact-socials h2 {
@@ -748,8 +805,8 @@ footer {
 /* Reuse from earlier CV section */
 .cv-download {
     text-align: center;
-    padding: 50px 20px;
-    background-color: #f9f9f9;
+    padding: 30px 20px;
+    background-color: white;
 }
 
 .cv-download h2 {
