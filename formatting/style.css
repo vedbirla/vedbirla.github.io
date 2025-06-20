@@ -215,7 +215,7 @@ footer {
 /* My Journey So Far Timeline */
 
 .timeline {
-    padding: 60px 20px;
+    padding: 50px 20px;
     max-width: 1200px;
     margin: 0 auto;
   }
@@ -237,7 +237,7 @@ footer {
   .timeline-line-wrapper::before {
     content: '';
     position: absolute;
-    width: 4px;
+    width: 8px;
     background-color: #2c3e50;
     top: 0;
     bottom: 0;
@@ -250,13 +250,13 @@ footer {
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 40px;
   }
   
   /* Individual cards */
   .timeline-card {
     position: relative;
-    width: 45%;
+    width: 47%;
     padding: 20px 25px;
     background-color: #fff;
     border-radius: 12px;
@@ -287,11 +287,11 @@ footer {
   
   /* Position dots on alternating sides */
   .timeline-card:nth-child(odd) .timeline-dot {
-    right: -35px;
+    right: -45px;
   }
   
   .timeline-card:nth-child(even) .timeline-dot {
-    left: -35px;
+    left: -45px;
   }
   
   /* Card content */
@@ -415,7 +415,7 @@ footer {
   .experience-card img {
     width: 100%;
     height: 200px;
-    object-fit: cover;
+    object-fit: contain;
   }
   
   .experience-card-content {
@@ -568,6 +568,7 @@ footer {
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     text-align: left;
     transition: transform 0.2s ease;
+    text-decoration: none;
 }
 
 .school-card:hover {
@@ -586,10 +587,16 @@ footer {
     color: #1e1e2f;
 }
 
-.school-card p {
+.school-points {
+    padding-left: 20px;
+    margin: 0;
+    color: #444;
     font-size: 16px;
     line-height: 1.5;
-    color: #444;
+}
+
+.school-points li {
+    margin-bottom: 8px;
 }
 
 /* Skills Section */
@@ -656,6 +663,7 @@ footer {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease;
     text-align: left;
+    text-decoration: none;
 }
 
 .award-tile:hover {
