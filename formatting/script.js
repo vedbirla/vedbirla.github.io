@@ -1,8 +1,20 @@
-fetch('./suppliments/header.html')
+fetch('/suppliments/header.html')
 .then(res => res.text())
-.then(data => document.getElementById('header').innerHTML = data);
+.then(data => {
+    document.getElementById('header').innerHTML = data;
 
-fetch('./suppliments/footer.html')
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    if (menuToggle && navLinks) {
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
+    }
+});
+
+
+fetch('/suppliments/footer.html')
 .then(res => res.text())
 .then(data => document.getElementById('footer').innerHTML = data);
 
@@ -35,13 +47,13 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navLinks = document.querySelector('.nav-links');
+// document.addEventListener('DOMContentLoaded', function () {
+//     const menuToggle = document.querySelector('.menu-toggle');
+//     const navLinks = document.querySelector('.nav-links');
 
-    if (menuToggle && navLinks) {
-        menuToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('show');
-        });
-    }
-});
+//     if (menuToggle && navLinks) {
+//         menuToggle.addEventListener('click', () => {
+//             navLinks.classList.toggle('show');
+//         });
+//     }
+// });

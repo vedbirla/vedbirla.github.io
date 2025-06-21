@@ -1,0 +1,107 @@
+.contact-intro {
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 18px;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+.contact-method {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 18px;
+    color: #1e1e2f;
+}
+
+.contact-method img {
+    width: 26px;
+    height: 26px;
+}
+
+.contact-method a {
+    color: #2c5f8f;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-method a:hover {
+    color: #00bfff;
+}
+
+.contact-socials {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #f9f9f9;
+    margin-top: 20px;
+}
+
+.contact-socials h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #1e1e2f;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: grayscale(100%);
+}
+
+.social-icons a:hover img {
+    transform: scale(1.2);
+    filter: grayscale(0%);
+}
+
+/* Reuse from earlier CV section */
+.cv-download {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: white;
+}
+
+.cv-download h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #1e1e2f;
+}
+
+.cv-download p {
+    font-size: 18px;
+    color: #444;
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+}
+
+.cv-btn {
+    background-color: #1e1e2f;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cv-btn:hover {
+    background-color: #00bfff;
+    transform: scale(1.05);
+}

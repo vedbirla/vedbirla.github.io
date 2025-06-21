@@ -1,0 +1,224 @@
+.about-me {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+.intro-text {
+    max-width: 500px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.intro-text h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #1e1e2f;
+}
+
+.intro-image img {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.intro-text a {
+    text-decoration: none;
+    color: #2c5f8f;
+    transition: color 0.3s ease;
+}
+
+.intro-text a:hover {
+    color: #1e1e2f;
+}
+
+/* What I'm Working On */
+.current-work {
+    background-color: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+    color: #333;
+}
+
+.current-work h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #1e1e2f;
+}
+
+.current-work p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+/* My Journey So Far Timeline */
+
+.timeline {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .timeline h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #1e1e2f;
+    text-align: center;
+  }
+  
+  /* Timeline structure */
+  .timeline-line-wrapper {
+    position: relative;
+    padding: 20px 0;
+  }
+  
+  /* Vertical line */
+  .timeline-line-wrapper::before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    background-color: #2c3e50;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+  }
+  
+  .timeline-cards {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  /* Individual cards */
+  .timeline-card {
+    position: relative;
+    width: 47%;
+    padding: 20px 25px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  /* Alternating left-right pattern */
+  .timeline-card:nth-child(odd) {
+    align-self: flex-start;
+  }
+  
+  .timeline-card:nth-child(even) {
+    align-self: flex-end;
+  }
+  
+  /* Dot indicators */
+  .timeline-dot {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #3498db;
+    border-radius: 50%;
+    top: 25px;
+    z-index: 2;
+    box-shadow: 0 0 0 4px rgba(52, 152, 219, 0.2);
+  }
+  
+  /* Position dots on alternating sides */
+  .timeline-card:nth-child(odd) .timeline-dot {
+    right: -45px;
+  }
+  
+  .timeline-card:nth-child(even) .timeline-dot {
+    left: -45px;
+  }
+  
+  /* Card content */
+  .timeline-card h3 {
+    margin-top: 0;
+    color: #3498db;
+    font-size: 1.4rem;
+  }
+  
+  .timeline-card p {
+    margin-bottom: 0;
+    line-height: 1.5;
+    color: #555;
+  }
+  
+  .timeline-card strong {
+    color: #2c3e50;
+  }
+  
+  /* Hover effect */
+  .timeline-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .timeline-line-wrapper::before {
+      left: 30px;
+    }
+    
+    .timeline-card {
+      width: calc(100% - 60px);
+      align-self: flex-end !important;
+      margin-left: 60px;
+    }
+    
+    .timeline-card .timeline-dot {
+      left: -35px !important;
+      right: auto !important;
+    }
+  }
+  
+
+
+/* Core Interests Section */
+.core-interests {
+    background-color: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.core-interests h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #1e1e2f;
+}
+
+.interest-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.interest-card {
+    background-color: #f0f0f8;
+    padding: 20px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease;
+}
+
+.interest-card:hover {
+    transform: translateY(-5px);
+}
