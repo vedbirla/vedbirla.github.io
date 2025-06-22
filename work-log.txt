@@ -14,8 +14,17 @@ consider making the tutoring page seperate so no header and footer, different de
 june 20 2025
 worked on hobbies, background, experience
 next time:
-add an other skills section in background page for things such as languages, leadership, communcation, project management(?)
+add an other skills section in background page for things such as languages, leadership, communcation, project management(?) [done]
 need to make expirience pages
 need to make tutoring page
 need to add connection from contact page to tutorign page
 consider making the tutoring page seperate so no header and footer, different design, different style page, but link to my website.
+
+
+june 21 2025
+worked on background formatting
+organized js file and seperated tutoring page
+added connection from contact page to tutorign page
+to do:
+need to make expirience pages
+need to make tutoring page

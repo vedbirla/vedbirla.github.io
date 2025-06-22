@@ -39,6 +39,28 @@
     color: #00bfff;
 }
 
+.tutoring-contact {
+    text-align: center;
+    padding: 20px 20px;
+    font-size: 18px;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.tutoring-contact a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+    transform-origin: left center;
+    display: inline-block;
+}
+
+.tutoring-contact a:hover {
+    transform: scale(1.2);
+}
+
 .contact-socials {
     text-align: center;
     padding: 30px 20px;

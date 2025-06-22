@@ -15,7 +15,7 @@
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -76,7 +76,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -85,7 +85,7 @@
     color: #1e1e2f;
     padding: 8px 15px;
     border-radius: 25px;
-    font-size: 16px;
+    font-size: 18px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
     transition: transform 0.2s ease;
 }
@@ -93,6 +93,38 @@
 .skill-tags span:hover {
     transform: scale(1.08);
 }
+
+
+/* soft skills section */
+
+.soft-skills {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.soft-skills h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #1e1e2f;
+}
+
+/* Individual Category Blocks */
+.skill-category {
+    margin-bottom: 35px;
+}
+
+.skill-category h3 {
+    font-size: 24px;
+    color: #1e1e2f;
+    margin-bottom: 15px;
+    margin-top: none;
+}
+
+.soft-skills .skill-tags span {
+    background-color: #ffe0e0; /* Light red for contrast */
+}
+
 
 /* Awards in Tile Format */
 .awards {
@@ -130,7 +162,7 @@
 }
 
 .award-tile h3 {
-    font-size: 20px;
+    font-size: 24px;
     margin-bottom: 10px;
     color: #1e1e2f;
 }
