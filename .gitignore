@@ -26,3 +26,9 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# remove Agents
+AGENTS.md
+
+# editor config
+.vscode
